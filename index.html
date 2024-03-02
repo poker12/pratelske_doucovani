@@ -1,85 +1,101 @@
 <!doctype html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-</head>
-<body>
-<div id="background" style="background-color: white">
-    <div id="body" style="background-color: white; width: 50%; margin:0 auto; ">
-        <div id="header-main">
-        <!--    <div id="header-main" style="background-image: url(img/main.jpg)">-->
-            <img src="img/main.jpg" width="100%">
-            <div id="header-title">
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        <title>Přátelské doučování</title>
+        <meta charset="utf-8" lang="cs">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+<!--            <div id="header-main" style="background-image: url(img/main.jpg); background-size: auto auto; background-repeat: no-repeat;">-->
+        <div id="header-main" class="container">
+            <div id="header-image" style="z-index: 1">
+                <img src="img/main.jpg" width="100%">
+            </div>
+            <div id="header-title" style="z-index: 2">
                 <h1>Doučování matematiky a příprava na přijímací zkoušky pro žáky základních škol osobně i online</h1>
             </div>
         </div>
-        <div id="cite">
+        <div id="cite" class="container">
+            <hr>
             <p><i>“Podstatné je, aby nás téma bavilo, teprve pak dosáhneme těch nejlepších výsledků.”</i></p>
+            <hr>
         </div>
-        <div id="services">
+        <div id="services" class="container">
             <hr>
             <h2>Služby doučování</h2>
             <hr>
-            <div id="services-inner">
-                <h3>Vyučovací hodina (45 minut)</h3>
-                <h4>300 Kč / 45 minut</h4>
-                <p>
-                    Doučování probíhá online nebo osobně v Ostravě-Porubě.
-                    Veškeré materiály má student neustále k dispozici v online formě.
-                    Vše, co si během lekce probereme a vysvětlíme hned nahrávám do jeho složky, aby se k tomu
-                    mohl kdykoliv vrátit a učivo si zopakovat. Nabízím materiály v podobě učebnic, pracovních listů
-                    nebo variant <a href="https://prijimacky.cermat.cz/">CERMAT testů</a>.
-                </p>
+            <div id="services-inner" class="row">
+                <div id="services-inner-img" class="col-sm-6">
+                    <img src="img/offer.jpg" width="100%">
+                </div>
+                <div id="services-inner-text" class="col-sm-6">
+                    <h3>Vyučovací hodina (45 minut)</h3>
+                    <h4>300 Kč / 45 minut</h4>
+                    <p>
+                        Doučování probíhá online nebo osobně v Ostravě-Porubě.
+                        Veškeré materiály má student neustále k dispozici v online formě.
+                        Vše, co si během lekce probereme a vysvětlíme hned nahrávám do jeho složky, aby se k tomu
+                        mohl kdykoliv vrátit a učivo si zopakovat. Nabízím materiály v podobě učebnic, pracovních listů
+                        nebo variant <a href="https://prijimacky.cermat.cz/">CERMAT testů</a>.
+                    </p>
+                </div>
             </div>
-            <div id="service-item-online">
-                <h3>Online</h3>
-                <p>
-                    Online forma doučování probíhá přes <a href="https://meet.google.com/">Google Meet</a>, stačí jen rozkliknout
-                    zaslaný odkaz a požádat o připojení. Při hovoru student vidí mě, dále sdílené příklady, do kterých si
-                    zakreslujeme poznámky a v nejpodstatnější části moji tabuli, která je nepostradatelná při
-                    geometrii a rýsování. Kladu důraz, aby student viděl celý postup rýsování, jak pracovat s kružítkem, jak
-                    přikládat pravítka apod.
-                </p>
-            </div>
-            <div id="service-item-personally">
-                <h3>Osobně</h3>
-                <p>
-                    Osobní formu doučování nabízím v Ostravě-Porubě.
-                </p>
+            <div id="services-inner-row" class="row">
+                <div id="service-item-online" class="col-sm-6">
+                    <h3>Online</h3>
+                    <p>
+                        Online forma doučování probíhá přes <a href="https://meet.google.com/">Google Meet</a>, stačí jen rozkliknout
+                        zaslaný odkaz a požádat o připojení. Při hovoru student vidí mě, dále sdílené příklady, do kterých si
+                        zakreslujeme poznámky a v nejpodstatnější části moji tabuli, která je nepostradatelná při
+                        geometrii a rýsování. Kladu důraz, aby student viděl celý postup rýsování, jak pracovat s kružítkem, jak
+                        přikládat pravítka apod.
+                    </p>
+                </div>
+                <div id="service-item-personally" class="col-sm-6">
+                    <h3>Osobně</h3>
+                    <p>
+                        Osobní formu doučování nabízím v Ostravě-Porubě.
+                    </p>
+                </div>
             </div>
         </div>
-        <div id="about">
+        <div id="about" class="container">
             <hr>
             <h2>O lektorce</h2>
             <hr>
-            <h3>Eliška Nováková</h3>
-            <p>
-                Studuji doktorské studium na fakultě strojní a ve volném čase doučuji matematiku soukromě a ve vzdělávacím centru.
-                <br/><br/>
-                Matematika je pro mě koníčkem a ráda bych studentům předala svůj pozitivní přístup k matematice a ukázala její kouzla a důležitost v každodenním životě.
-            </p>
         </div>
-        <div id="contacts">
+        <div id="about-container-fluid" class="container-fluid bg-dark text-white">
+            <div id="about-container" class="container p-3">
+                <div id="about-container-content" class="row">
+                    <div id="about-container-content-photo" class="col-sm-6">
+                        <img src="img/about.png" width="100%">
+                    </div>
+                    <div id="about-container-content-bio" class="col-sm-6">
+                        <h3>Eliška Nováková</h3>
+                        <p>
+                            Studuji doktorské studium na fakultě strojní a ve volném čase doučuji matematiku soukromě a ve vzdělávacím centru.
+                            <br/><br/>
+                            Matematika je pro mě koníčkem a ráda bych studentům předala svůj pozitivní přístup k matematice a ukázala její kouzla a důležitost v každodenním životě.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="contacts" class="container">
             <hr>
             <h2>Kontakt</h2>
             <hr>
             <h3><a href="mailto:novakova.ell@seznam.cz">novakova.ell@seznam.cz</a></h3>
             <h3>Ostrava-Poruba</h3>
         </div>
-        <div id="comments">
+        <div id="comments" class="container">
             <hr>
             <h2>Komentáře</h2>
             <hr>
             <h3>Napsat komentář</h3>
             <p>...</p>
         </div>
-    </div>
-</div>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-</body>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    </body>
 </html>
