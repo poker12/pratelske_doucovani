@@ -7,6 +7,30 @@
         <title>Přátelské doučování</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            .main-caption-wrapper {
+                display: inline-block;
+                position: relative;
+            }
+
+            .main-caption-wrapper .overlay {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width:100%;
+                height:100%;
+                background-color: rgba(255,210,210,0.25);
+                color:black;
+            }
+
+            .main-caption-wrapper .header {
+                top: 40%;
+                position: absolute;
+                text-align: center;
+                width: 100%;
+                background-color: rgba(255,255,255,0.6);
+            }
+        </style>
     </head>
     <body>
 <!--        <div id="header" class="container-fluid text-bg-dark">-->
@@ -38,10 +62,12 @@
 
 <!--            <div id="main-caption" style="background-image: url(img/main.jpg); background-size: auto auto; background-repeat: no-repeat;">-->
         <div id="main-caption" class="container col-lg-5">
-                <img src="img/main.jpg" width="100%">
-                <div>
-                    <h1 class="display-6">Doučování matematiky a příprava na přijímací zkoušky pro žáky základních škol osobně i online</h1>
+            <div class="main-caption-wrapper">
+                <img src="img/main.jpg" class="img-fluid">
+                <div class="overlay">
+                    <h4 class="header shadow">Doučování matematiky a příprava na přijímací zkoušky pro žáky základních škol osobně i online</h4>
                 </div>
+            </div>
         </div>
         <div id="cite" class="container p-3 col-lg-5">
             <div class="container px-4">
@@ -62,7 +88,7 @@
             <hr>
             <div id="services-inner" class="row p-3">
                 <div id="services-inner-img" class="col-sm-6">
-                    <img src="img/offer.jpg" width="100%">
+                    <img src="img/offer.jpg" class="img-fluid">
                 </div>
                 <div id="services-inner-text" class="col-sm-6">
                     <h3>Vyučovací hodina (45 minut)</h3>
@@ -106,8 +132,7 @@
             <div id="about-container" class="container col-lg-5">
                 <div id="about-container-content" class="row">
                     <div id="about-container-content-photo" class="col-sm-6 p-3">
-<!--                        <img src="img/about.png" width="100%" class="img-thumbnail" alt="Lektorka Eliška Nováková">-->
-                        <img src="img/about.png" width="100%" class="rounded" alt="Lektorka Eliška Nováková">
+                        <img src="img/about.png" class="img-fluid rounded" alt="Lektorka Eliška Nováková">
                     </div>
                     <div id="about-container-content-bio-wrapper" class="col-sm-6 p-3">
                         <div id="about-container-content-bio" class="p-1 card text-bg-dark" style="border: 0px;">
