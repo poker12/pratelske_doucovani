@@ -1,0 +1,47 @@
+{
+	"info": {
+		"_postman_id": "fc9f3af9-22b7-4f23-a9ec-f1ff6bc4ed96",
+		"name": "IndexNow pratelske-doucovani",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "3029143"
+	},
+	"item": [
+		{
+			"name": "api.indexnow.org",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Charset",
+						"value": "utf-8",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"host\": \"www.pratelske-doucovani.cz\",\r\n  \"key\": \"35d5b7b66e01431a8a5a1f09f0dea041\",\r\n  \"keyLocation\": \"https://www.example.org/35d5b7b66e01431a8a5a1f09f0dea041.txt\",\r\n  \"urlList\": [\r\n      \"https://www.pratelske-doucovani.cz\"\r\n      ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "api.indexnow.org",
+					"host": [
+						"api",
+						"indexnow",
+						"org"
+					]
+				},
+				"description": "update web changes by IndexNow"
+			},
+			"response": []
+		}
+	]
+}
