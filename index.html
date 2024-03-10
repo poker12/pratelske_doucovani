@@ -31,6 +31,10 @@
         <meta property="og:image:secure_url" content="https://www.pratelske-doucovani.cz/img/main.jpg"/>
         <meta property="og:image" content="https://www.pratelske-doucovani.cz/img/main.jpg" />
 
+        <!-- fb comments administration section -->
+<!--        <meta property="fb:admins" content="{YOUR_FACEBOOK_USER_ID_1}"/>-->
+<!--        <meta property="fb:admins" content="{YOUR_FACEBOOK_USER_ID_2}"/>-->
+
         <meta name="twitter:card" content="summary_large_image">
 
         <!-- Change the title of the page dynamically after loading and avoid the site name in search results-->
@@ -73,6 +77,9 @@
     </head>
 
     <body>
+        <div id="fb-root"></div>
+        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/cs_CZ/sdk.js#xfbml=1&version=v19.0" nonce="vwiGYeTJ"></script>
+
         <div id="header" class="container-fluid text-bg-dark">
             <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
                 <a class="navbar-brand" href="#">PŘÁTELSKÉ DOUČOVÁNÍ</a>
@@ -93,9 +100,9 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#contacts">Kontakt</a>
                         </li>
-<!--                        <li class="nav-item">-->
-<!--                            <a class="nav-link" href="#comments">Komentáře</a>-->
-<!--                        </li>-->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#comments">Komentáře</a>
+                        </li>
                     </ul>
                 </div>
             </nav>
@@ -103,7 +110,7 @@
 
         <div id="main-caption" class="container col-lg-5">
             <div class="main-caption-wrapper">
-                <img src="img/main.jpg" class="img-fluid" alt="Doučování matematiky image">
+                <img src="img/main.jpg" class="img-fluid" alt="Doučování matematiky">
                 <div class="overlay">
                     <div class="header shadow p-3">
                         <h1 style="font-size: 24px;">
@@ -209,17 +216,20 @@
                 </div>
             </div>
         </div>
-<!--        <div id="comments" class="container col-lg-5">-->
-<!--            <hr>-->
-<!--            <h2>Komentáře</h2>-->
-<!--            <hr>-->
-<!--            <div class="p-3">-->
-<!--                <h3>Napsat komentář</h3>-->
-<!--                <p>...</p>-->
-<!--            </div>-->
-<!--        </div>-->
+        <div id="comments" class="container col-lg-5">
+            <hr>
+            <h2>Komentáře</h2>
+            <hr>
+            <div class="p-3">
+                <div class="fb-comments" data-href="https://www.pratelske-doucovani.cz/" data-width="" data-numposts="5"></div>
+            </div>
+        </div>
         <!-- Blank space in the end of the page -->
         <div class="p-4">
+        </div>
+        <div id="footer" class="container-fluid text-bg-dark">
+            <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+            </nav>
         </div>
     </body>
 </html>
